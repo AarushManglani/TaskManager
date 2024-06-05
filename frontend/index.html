@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <div id="task-container">
+        <input type="date" id="task-date">
+        <button id="show-tasks">Show Tasks</button>
+        <div id="task-list"></div>
+    </div>
+    <div id="add-task-container">
+        <h2>Add Task</h2>
+        <input type="date" id="add-task-date">
+        <input type="time" id="task-time">
+        <input type="text" id="task-desc" placeholder="Task description">
+        <button id="add-task">Add Task</button>
+    </div>
+    <div id="finished-task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-finished-modal">&times;</span>
+            <h2>Mark Task as Finished</h2>
+            <textarea id="finished-desc" placeholder="Describe what you have done..."></textarea>
+            <button id="save-finished-task">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
